@@ -7,4 +7,7 @@ repository:
   name: playground
 
   # A short description of the repository that will show up on GitHub
-  description: description of repo
+  description: this is just a testsuite for all the experimental stuff, before implement it in real life repos
+
+  # A URL with more information about the repository
+  # homepage: https://github.com/Just-Another-Weather-Site
