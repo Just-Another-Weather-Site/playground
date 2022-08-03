@@ -1,4 +1,8 @@
 {
+    "name": "jaws/playground",
+    "description": "nothing to descripe here, just play with fun",
+    "license": "MIT",
+    "type": "project",
     "autoload": {
         "classmap": [
             "src/"
