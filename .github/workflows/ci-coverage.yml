@@ -17,3 +17,5 @@ jobs:
         uses: php-actions/phpunit@v3.0.0
         with:
           bootstrap: vendor/autoload.php
+          args: --coverage-text
+          php_extensions: xdebug mbstring
