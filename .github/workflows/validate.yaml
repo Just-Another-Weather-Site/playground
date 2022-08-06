@@ -14,4 +14,4 @@ jobs:
         with:
           command: validate
           php_version: "8.0.1"
-          version: 2
+          version: 2.2
