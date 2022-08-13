@@ -20,3 +20,5 @@ jobs:
           bootstrap: vendor/autoload.php
           args: --coverage-text
           php_extensions: mbstring
+        env:
+          XDEBUG_MODE: coverage
