@@ -94,3 +94,11 @@ labels:
   - name: wontfix
     color: ffffff
     description: This will not be worked on
+
+  - name: repo settings
+    color: a7da3c
+    description: Settings of this code repo need some change
+
+  - name: test or coverage
+    color: d84494
+    description: Tests and or coverage improvement
