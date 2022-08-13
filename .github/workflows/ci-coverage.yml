@@ -12,13 +12,13 @@ jobs:
       - uses: php-actions/composer@v6.0.0
         with:
           command: dump-autoload
-          php_extensions: xdebug
+          # php_extensions: 
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3.0.0
         with:
           bootstrap: vendor/autoload.php
           args: --coverage-text
-          php_extensions: mbstring
+          php_extensions: xdebug mbstring
         env:
           XDEBUG_MODE: coverage
