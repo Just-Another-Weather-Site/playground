@@ -1,9 +1,9 @@
-name: Validate 
+name: Validate Composer files
 
 on: [push]
 
 jobs:
-  build-test:
+  validate_composer:
     runs-on: ubuntu-latest
 
     steps:
