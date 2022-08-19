@@ -1,19 +1,27 @@
-name: CI-coverage
+name: Unit Test with Coverage Reports
 
 on: [push]
 
 jobs:
-  build-test:
+  coverage_test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2.0.0
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
 
-      - uses: php-actions/composer@v6.0.0
+      - name: Cache Composer dependencies
+        uses: actions/cache@v3.0.7
+        with:
+          path: /tmp/composer-cache
+          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
+
+      - name: Manage Composer dependencies
+        uses: php-actions/composer@v6.0.0
         with:
           command: dump-autoload
 
-      - name: PHPUnit Tests
+      - name: Run PHPUnit Tests
         uses: php-actions/phpunit@v3.0.0
         with:
           bootstrap: vendor/autoload.php
@@ -25,7 +33,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.1.0
 
-      - name: Run codacy-coverage-reporter
+      - name: Upload coverage to Codacy
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}  
