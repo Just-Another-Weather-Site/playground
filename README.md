@@ -5,3 +5,5 @@
 [![codecov](https://codecov.io/gh/Just-Another-Weather-Site/playground/branch/main/graph/badge.svg?token=I4NYQ8VV9Z)](https://codecov.io/gh/Just-Another-Weather-Site/playground)
 [![Unit Test with Coverage Reports](https://github.com/Just-Another-Weather-Site/playground/actions/workflows/ci-coverage.yml/badge.svg)](https://github.com/Just-Another-Weather-Site/playground/actions/workflows/ci-coverage.yml)
 [![Validate Composer files](https://github.com/Just-Another-Weather-Site/playground/actions/workflows/validate.yaml/badge.svg)](https://github.com/Just-Another-Weather-Site/playground/actions/workflows/validate.yaml)
+
+this is just a testsuite for all the experimental stuff, before implement it in real life repos
