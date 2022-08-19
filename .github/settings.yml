@@ -102,3 +102,7 @@ labels:
   - name: test or coverage
     color: d84494
     description: Tests and or coverage improvement
+
+  - name: Github Actions
+    color: fef2c0
+    description: Add or improve gh-a workflows
