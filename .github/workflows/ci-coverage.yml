@@ -7,7 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2.0.0
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v3.0.7
+        with:
+          path: /tmp/composer-cache
+          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
 
       - uses: php-actions/composer@v6.0.0
         with:
