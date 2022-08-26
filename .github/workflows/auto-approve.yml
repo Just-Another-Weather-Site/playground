@@ -8,5 +8,5 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: hmarr/auto-approve-action@v2.0.0
+      - uses: hmarr/auto-approve-action@v2.4.0
         if: github.actor == 'renovate[bot]'
