@@ -1,0 +1,16 @@
+name: run "Instant PHP" quality checks from your console
+
+on:
+    - pull_request
+
+jobs:
+    phpinsights:
+        runs-on: ubuntu-latest
+        name: PHP Insights checks
+        steps:
+            - uses: actions/checkout@v3.0.2
+            - uses: shivammathur/setup-php@2.21.2
+              with:
+                  php-version: 8.0
+            - run: composer install --prefer-dist --no-progress --no-suggest
+            - run: vendor/bin/phpinsights -n --ansi --format=github-action
