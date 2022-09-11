@@ -11,12 +11,14 @@
     "require-dev": {
         "phpunit/phpunit": "9.5.24",
         "nunomaduro/phpinsights": "^2.5",
-        "phpro/grumphp": "^1.13"
+        "phpro/grumphp": "^1.13",
+        "infection/infection": "^0.26.14"
     },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpro/grumphp": true
+            "phpro/grumphp": true,
+            "infection/extension-installer": true
         }
     }
 }
