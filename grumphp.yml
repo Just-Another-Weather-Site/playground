@@ -1,0 +1,13 @@
+grumphp:
+    tasks:
+        phpunit:
+            always_execute: true
+        clover_coverage:
+            clover_file: build/logs/coverage/clover.xml
+            level: 100
+        infection:
+            threads: 4
+            test_framework: phpunit
+            configuration: infection.json
+            min_msi: 90
+            min_covered_msi: 90
