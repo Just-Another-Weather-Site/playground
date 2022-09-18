@@ -8,5 +8,6 @@
 
 [![codecov](https://codecov.io/gh/Just-Another-Weather-Site/playground/branch/main/graph/badge.svg?token=I4NYQ8VV9Z)](https://codecov.io/gh/Just-Another-Weather-Site/playground)
 
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FJust-Another-Weather-Site%2Fplayground%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/Just-Another-Weather-Site/playground/main)
 
 this is just a testsuite for all the experimental stuff, before implement it in real life repos

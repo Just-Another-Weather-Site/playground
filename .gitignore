@@ -10,6 +10,7 @@
 ###< symfony/framework-bundle ###
 
 ###> phpunit ###
+/build/
 /.phpunit.result.cache
 /clover.xml
 ###< phpunit ###
