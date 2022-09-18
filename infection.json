@@ -5,6 +5,9 @@
     },
     "tmpDir": "build/logs/coverage/coverage-xml",
     "logs": {
+        "stryker": {
+            "badge": "main"
+        },
         "github": true,
         "text": "build/logs/infection/infection.log",
         "summary": "build/logs/infection/summary.log",
