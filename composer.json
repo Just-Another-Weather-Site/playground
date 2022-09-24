@@ -3,6 +3,9 @@
     "description": "nothing to descripe here, just play with fun",
     "license": "MIT",
     "type": "project",
+    "require": {
+        "php": ">=8.0.0"
+    },
     "autoload": {
         "classmap": [
             "src/"
