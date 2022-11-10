@@ -17,7 +17,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
 
       - name: Manage Composer dependencies
-        uses: php-actions/composer@v6.0.0
+        uses: php-actions/composer@v6.1.1
         with:
           command: dump-autoload
 
