@@ -22,7 +22,7 @@ jobs:
           command: dump-autoload
 
       - name: Run PHPUnit Tests
-        uses: php-actions/phpunit@v3.0.2
+        uses: php-actions/phpunit@v3.0.3
         with:
           bootstrap: vendor/autoload.php
           args: --coverage-text --coverage-clover coverage.xml
