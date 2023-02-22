@@ -19,11 +19,13 @@ jobs:
       - name: Manage Composer dependencies
         uses: php-actions/composer@v6.1.1
         with:
+          php_version: "8.2"
           command: dump-autoload
 
       - name: Run PHPUnit Tests
         uses: php-actions/phpunit@v3.0.2
         with:
+          php_version: "8.2"
           bootstrap: vendor/autoload.php
           args: --coverage-text --coverage-clover coverage.xml
           php_extensions: xdebug mbstring
