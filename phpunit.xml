@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true"
-         verbose="true"
-         bootstrap="./vendor/autoload.php">
-    <testsuite name="TDD Suite">
-        <directory>tests</directory>
-    </testsuite>
-
-    <coverage>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" bootstrap="./vendor/autoload.php" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd" cacheDirectory=".phpunit.cache">
+  <testsuite name="TDD Suite">
+    <directory>tests</directory>
+  </testsuite>
+  <coverage>
     <include>
-        <directory suffix=".php">src</directory>
+      <directory suffix=".php">src</directory>
     </include>
-        <report>
-            <xml outputDirectory="build/logs/coverage/coverage-xml/infection"/>
-            <html outputDirectory="build/logs/coverage/html-coverage"/>
-            <clover outputFile="build/logs/coverage/clover.xml"/>
-        </report>
-    </coverage>
-
-    <logging>
-        <junit outputFile="build/logs/coverage/junit.xml"/>
-    </logging>
+    <report>
+      <xml outputDirectory="build/logs/coverage/coverage-xml/infection"/>
+      <html outputDirectory="build/logs/coverage/html-coverage"/>
+      <clover outputFile="build/logs/coverage/clover.xml"/>
+    </report>
+  </coverage>
+  <logging>
+    <junit outputFile="build/logs/coverage/junit.xml"/>
+  </logging>
 </phpunit>
