@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" bootstrap="./vendor/autoload.php" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd" cacheDirectory=".phpunit.cache">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" bootstrap="./vendor/autoload.php" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" executionOrder="random" resolveDependencies="true" cacheDirectory=".phpunit.cache">
   <testsuite name="TDD Suite">
     <directory>tests</directory>
   </testsuite>
   <coverage>
-    <include>
-      <directory suffix=".php">src</directory>
-    </include>
     <report>
       <xml outputDirectory="build/logs/coverage/coverage-xml/infection"/>
       <html outputDirectory="build/logs/coverage/html-coverage"/>
@@ -16,4 +13,9 @@
   <logging>
     <junit outputFile="build/logs/coverage/junit.xml"/>
   </logging>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
 </phpunit>
