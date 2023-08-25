@@ -21,7 +21,7 @@ jobs:
                   git config --global core.eol lf
 
             - name: Checkout
-              uses: actions/checkout@v3.5.3
+              uses: actions/checkout@v3.6.0
 
             - name: Install PHP
               uses: shivammathur/setup-php@2.25.5
