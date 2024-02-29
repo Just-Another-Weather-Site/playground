@@ -32,7 +32,7 @@ jobs:
                   tools: phpunit, infection
 
             - name: Install dependencies
-              uses: ramsey/composer-install@2.2.0
+              uses: ramsey/composer-install@2.3.1
 
             - name: Autoloader
               run: composer dump-autoload
