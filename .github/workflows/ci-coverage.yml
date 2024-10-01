@@ -41,7 +41,7 @@ jobs:
               run: vendor/bin/phpunit --coverage-text --coverage-clover coverage.xml
 
             - name: Upload coverage to Codecov
-              uses: codecov/codecov-action@v4.1.1
+              uses: codecov/codecov-action@v4.6.0
 
             - name: Upload coverage to Codacy
               uses: codacy/codacy-coverage-reporter-action@v1.3.0
