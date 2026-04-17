@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dccb90b83604b5ab2b6a028728c20d4f",
+    "content-hash": "87f5e403b6d9ebb2135268e24cad6e10",
     "packages": [],
     "packages-dev": [
         {
@@ -2623,23 +2623,23 @@
         },
         {
             "name": "phpro/grumphp",
-            "version": "v2.19.0",
+            "version": "v2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpro/grumphp.git",
-                "reference": "5a414bed2cd006c40ea7c086af380992741ff43b"
+                "reference": "732a228acacd062faec211e0e3e4317ce4ea9bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpro/grumphp/zipball/5a414bed2cd006c40ea7c086af380992741ff43b",
-                "reference": "5a414bed2cd006c40ea7c086af380992741ff43b",
+                "url": "https://api.github.com/repos/phpro/grumphp/zipball/732a228acacd062faec211e0e3e4317ce4ea9bd6",
+                "reference": "732a228acacd062faec211e0e3e4317ce4ea9bd6",
                 "shasum": ""
             },
             "require": {
                 "amphp/amp": "^3.0",
                 "amphp/parallel": "^2.1",
                 "composer-plugin-api": "^2.0",
-                "doctrine/collections": "^1.6.8 || ^2.0",
+                "doctrine/collections": "^1.6.8 || ^2.0 || ^3.0",
                 "ext-json": "*",
                 "gitonomy/gitlib": "^1.6",
                 "laravel/serializable-closure": "^2.0",
@@ -2662,7 +2662,7 @@
             },
             "require-dev": {
                 "brianium/paratest": "^7.8.5",
-                "composer/composer": "^2.9.5",
+                "composer/composer": "^2.9.6",
                 "nikic/php-parser": "^5.7",
                 "php-cs-fixer/shim": "^3.93",
                 "php-parallel-lint/php-parallel-lint": "^1.4",
@@ -2737,9 +2737,9 @@
             "description": "A composer plugin that enables source code quality checks.",
             "support": {
                 "issues": "https://github.com/phpro/grumphp/issues",
-                "source": "https://github.com/phpro/grumphp/tree/v2.19.0"
+                "source": "https://github.com/phpro/grumphp/tree/v2.20.0"
             },
-            "time": "2026-02-03T06:25:00+00:00"
+            "time": "2026-04-16T09:33:00+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
